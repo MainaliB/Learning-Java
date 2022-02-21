@@ -1,12 +1,3 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
-
-/**
- *
- * @author bibekmainali
- */
 /* Defines cirlce class and uses it to creqate objects.
 The program constructs three circle objects with radius 1, 25, and 125 and displays
 the radius and area of each of the three circle. It then changes the radius of the second object to 100 
