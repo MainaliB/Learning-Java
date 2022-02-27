@@ -67,8 +67,18 @@ public class CircleWithPrivateDataFields {
         System.out.println("The number of objects created is " +
               CircleWithPrivateDataFields.getNumberOfObjects()  );
         
+       //create another circle object with no args constructor 
+     CircleWithPrivateDataFields myCircle2 = new CircleWithPrivateDataFields();
+     
+          //create another circle object with no args constructor 
+     CircleWithPrivateDataFields myCircle3 = new CircleWithPrivateDataFields();
+     
+     
+          //create another circle object with no args constructor 
+     CircleWithPrivateDataFields myCircle4 = new CircleWithPrivateDataFields();
     
-    
-    
+      //get the count of the number of circle objects created
+        System.out.println("The number of objects created is " +
+              CircleWithPrivateDataFields.getNumberOfObjects()  );
     }
 }
