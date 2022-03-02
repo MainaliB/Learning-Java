@@ -9,9 +9,15 @@
  */
 import java.util.*;
 public class Location {
-    
-    
-    
+    int row;
+    int col;
+    double maxValue;
+   //constructor
+    public Location(int row, int col, double maxValue){
+        this.row = row;
+        this.col = col;
+        this.maxValue = maxValue;
+    }
     
     //method to return the index of the largest value in a 2 dimensional array
     public static int[] locateLargest(double [][]a){
