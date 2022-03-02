@@ -12,12 +12,36 @@ public class Location {
     int row;
     int col;
     double maxValue;
+    
+    //main method
+    public static void main(String[] args){
+        Scanner input = new Scanner(System.in);
+        
+        System.out.println(" Please enter the number of rows and columns "
+                + "of the array: ");
+        //reading user input as dimension of the array
+        int row = input.nextInt(); 
+        int col = input.nextInt();
+        double [][] numbersArray = new double [row][col];
+        //ask user to input the array
+        System.out.println("Enter the array");
+        for (int i = 0; i < row; i++){
+            for (int j = 0; j < col; j ++){
+                numbersArray[i][j] = input.nextDouble();
+    
+            }
+        }
+    }    
+    
+    
    //constructor
     public Location(int row, int col, double maxValue){
         this.row = row;
         this.col = col;
         this.maxValue = maxValue;
     }
+    
+    
     
     //method to return the index of the largest value in a 2 dimensional array
     public static int[] locateLargest(double [][]a){
