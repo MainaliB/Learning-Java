@@ -27,7 +27,15 @@ public class OutstandingBalance {
    
    }
    
-   public double getOutstangingBal(){
+   public double getOutstangingBal(double monthlyPayment, int numberOfMonths, double annualInterestRate, double loanAmount ){
+       double outstandingBal;
+       for(int i = 0; i <=)
+       
+       
+       
+       
+       
+       return outstandingBal;
    
    
    }
