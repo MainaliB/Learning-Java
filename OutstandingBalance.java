@@ -28,8 +28,11 @@ public class OutstandingBalance {
    }
    
    public double getOutstangingBal(double monthlyPayment, int numberOfMonths, double annualInterestRate, double loanAmount ){
-       double outstandingBal;
-       for(int i = 0; i <=)
+       double outstandingBal = loanAmount;
+       double balanceBeforeN;
+       for(int i = 0; i <=numberOfMonths; i++){
+           
+       }
        
        
        
