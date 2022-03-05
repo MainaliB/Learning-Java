@@ -8,6 +8,7 @@
  * @author bibekmainali
  */
 import java.util.*;
+import javafx.application.Application;
 public class QuotientWithException {
     public static int quotient(int number1, int number2){
         if (number2 ==0){
