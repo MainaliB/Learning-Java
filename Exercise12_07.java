@@ -10,9 +10,17 @@
 import java.util.*;
 public class Exercise12_07 {
     public static void main(String[] args){
+        //lets prompt user for input
+        Scanner input = new Scanner(System.in);
+        String userInput;
+        
+        System.out.println("Please enter a binary string. Binary string consists"
+                + " of 0s and 1s ");
+        userInput = input.nextLine();
+        
         try{
-            System.out.println(bin2Dec("10001"));
-            System.out.println(bin2Dec("141111111"));
+            System.out.println(bin2Dec(userInput));
+            //System.out.println(bin2Dec("141111111"));
         
         
         }
@@ -29,12 +37,13 @@ public class Exercise12_07 {
     contains a method that converts the binary digit string to decimal number if the string
     is binary otherwise, throws NumberFormatException */
     
-    
+    //wrong way of getting binary to decimal as the powering of 2 works from opposite direction
+    //fix it
 public static int bin2Dec(String binaryString){
     double decNumber=0;
     int lenOfString = binaryString.length();
     for (int i = binaryString.length() ; i >=0 ;i--){
-        if ((Integer.valueOf(binaryString.charAt(i-1)) != 0 )|| (Integer.valueOf(binaryString.charAt(i-1)) != 1)){
+        if ((Integer.valueOf(binaryString.charAt(i-1)) != 0 ) && (Integer.valueOf(binaryString.charAt(i-1)) != 1)){
             throw new InputMismatchException ("Binary digit only contains 0 and 1");
    
         }
