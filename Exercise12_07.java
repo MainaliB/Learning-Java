@@ -16,8 +16,8 @@ public class Exercise12_07 {
         
         System.out.println("Please enter a binary string. Binary string consists"
                 + " of 0s and 1s ");
-        userInput = input.nextLine();
-        
+        userInput = input.next();
+        //using try and catch to try the block of code and catch exception
         try{
             System.out.println(bin2Dec(userInput));
             //System.out.println(bin2Dec("141111111"));
@@ -42,16 +42,19 @@ public class Exercise12_07 {
 public static int bin2Dec(String binaryString){
     double decNumber=0;
     int lenOfString = binaryString.length();
-    for (int i = binaryString.length() ; i >=0 ;i--){
-        if ((Integer.valueOf(binaryString.charAt(i-1)) != 0 ) && (Integer.valueOf(binaryString.charAt(i-1)) != 1)){
+    int j = 0;//use this variable to get the power of 2 to get the decimal number
+    for (int i = binaryString.length() ; i >0 ;i--){
+        if( (binaryString.charAt(i-1) != '0') &&//use this logic to check if the number is not equal to 0 and 
+                //if it is not equal to 1
+                (binaryString.charAt(i-1) != '1')){
             throw new InputMismatchException ("Binary digit only contains 0 and 1");
    
         }
         else {
             decNumber = decNumber + (Integer.valueOf(binaryString.charAt(i-1))
-                    * Math.pow(2,lenOfString));
+                    * Math.pow(2,j));
             
-            lenOfString--;
+            j++;
             
         }
     }
