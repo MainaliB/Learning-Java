@@ -16,7 +16,7 @@ public class Exercise12_07 {
         
         System.out.println("Please enter a binary string. Binary string consists"
                 + " of 0s and 1s ");
-        userInput = input.next();
+        userInput = input.nextLine();
         //using try and catch to try the block of code and catch exception
         try{
             System.out.println(bin2Dec(userInput));
