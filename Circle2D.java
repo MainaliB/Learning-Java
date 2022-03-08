@@ -57,10 +57,10 @@ public class Circle2D {
         boolean returnValue;
         double distance = Math.sqrt(Math.pow((x-getCenter()[0]),2) + Math.pow((y - getCenter()[1]),2));
         if (distance < radius){
-            returnValue = true;
+            returnValue = false;
         }
         else {
-            returnValue = false;
+            returnValue = true;
         }
             
     
@@ -70,9 +70,17 @@ public class Circle2D {
     //method that takes in a circle object and returns true if it is inside this circle
     public boolean contains(Circle2D circle){
         //a point is inside the circle if its distance to the center of the cirlce is less than the radius
-        
+       boolean returnValue;
+        double distance = Math.sqrt(Math.pow((x-circle.getCenter()[0]),2) + Math.pow((y - circle.getCenter()[1]),2));
+        if (distance < circle.radius){
+            returnValue = true;
+        }
+        else {
+            returnValue = false;
+        }
+            
     
-    return true;
+    return returnValue;
     }
     
     //method overlabs that takes an object of Circle2D class and returns true if it overlaps
@@ -84,10 +92,18 @@ public class Circle2D {
     
     //main method to test our program
     public static void main(String[] args){
+        
+        
+        Circle2D c1 = new Circle2D(2,2,5.5);
+        
+        System.out.println("The area of the circle is: " +c1.getArea()
+        + " and the perimeter of the circle is: " + c1.getPerimeter());
     //write the code to test the method
     
-    
-    }
+        System.out.println("Does the circle c1 contain (3,3)? " +
+                c1.contains(3,3));
+        
+        System.out.println();
     
     
     
