@@ -103,8 +103,9 @@ public class Circle2D {
         System.out.println("Does the circle c1 contain (3,3)? " +
                 c1.contains(3,3));
         
-        System.out.println();
+        System.out.println("Does the circle c1 contain a new circle"
+                + " Circle2D(4,5,10.5): " + c1.contains(new Circle2D(4,5,10.5)) );
     
     
-    
+    }
 }
