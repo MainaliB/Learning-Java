@@ -57,10 +57,10 @@ public class Circle2D {
         boolean returnValue;
         double distance = Math.sqrt(Math.pow((x-getCenter()[0]),2) + Math.pow((y - getCenter()[1]),2));
         if (distance < radius){
-            returnValue = false;
+            returnValue = true;
         }
         else {
-            returnValue = true;
+            returnValue = false;
         }
             
     
@@ -69,10 +69,10 @@ public class Circle2D {
     
     //method that takes in a circle object and returns true if it is inside this circle
     public boolean contains(Circle2D circle){
-        //a point is inside the circle if its distance to the center of the cirlce is less than the radius
+       //for the big cirlce to contain the small circle, the sum of distance btwn the centers and the small radius must be less than the radius of the big circle
        boolean returnValue;
         double distance = Math.sqrt(Math.pow((x-circle.getCenter()[0]),2) + Math.pow((y - circle.getCenter()[1]),2));
-        if (distance < circle.radius){
+        if ((distance + circle.getRadius()) < radius){
             returnValue = true;
         }
         else {
@@ -86,9 +86,22 @@ public class Circle2D {
     //method overlabs that takes an object of Circle2D class and returns true if it overlaps
     //this circle and false if it doesnt
     public boolean overlaps(Circle2D circle){
+        //for the circle to overlap, the sum of distance betwn the centers and the small radius must be greater than the radius of the big circle
+         boolean returnValue;
+        double distance = Math.sqrt(Math.pow((x-circle.getCenter()[0]),2) + Math.pow((y - circle.getCenter()[1]),2));
+        if ((distance + circle.getRadius()) > radius){
+            returnValue = true;
+        }
+        else {
+            returnValue = false;
+        }
+            
     
-    return true;
+    return returnValue;
     }
+    
+
+    
     
     //main method to test our program
     public static void main(String[] args){
@@ -96,8 +109,8 @@ public class Circle2D {
         
         Circle2D c1 = new Circle2D(2,2,5.5);
         
-        System.out.println("The area of the circle is: " +c1.getArea()
-        + " and the perimeter of the circle is: " + c1.getPerimeter());
+        System.out.printf("The area of the circle c1 is: %2.2f and the perimeter "
+                + "of the circle c1 is:%2.2f " ,c1.getArea(), c1.getPerimeter());
     //write the code to test the method
     
         System.out.println("Does the circle c1 contain (3,3)? " +
@@ -105,6 +118,9 @@ public class Circle2D {
         
         System.out.println("Does the circle c1 contain a new circle"
                 + " Circle2D(4,5,10.5): " + c1.contains(new Circle2D(4,5,10.5)) );
+        
+        System.out.println("Does the circle c1 overlaps a new circle"
+                + " Circle2D(3,5,2.3): " + c1.overlaps(new Circle2D(3,5,2.3)));
     
     
     }
