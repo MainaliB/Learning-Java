@@ -51,8 +51,9 @@ public static int bin2Dec(String binaryString){
    
         }
         else {
-            decNumber = decNumber + (Integer.valueOf(binaryString.charAt(i-1))
-                    * Math.pow(2,j));
+            decNumber = decNumber + (binaryString.charAt(i-1)-'0') * (int)Math.pow(2,j);
+            //decNumber = decNumber + (Integer.valueOf(binaryString.charAt(i-1))
+                   // * Math.pow(2,j)); wont work because gives the decimal value from ascii table
             
             j++;
             
