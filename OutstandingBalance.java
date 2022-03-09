@@ -16,7 +16,9 @@ public class OutstandingBalance {
     int numberOfMonths;
     double outstandingBal;
     
-    
+    /*The logic:
+    1. create an outstanding balance object
+    2. create a static method to calculate the outstanding balance after certain months*/
     //constructor
    public OutstandingBalance(double loanAmount, double annualInterestRate, double monthlyPayment, int numberOfMonths, double outstandingBal){
        this.loanAmount = loanAmount;
