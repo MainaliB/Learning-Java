@@ -71,7 +71,7 @@ public Loan(){
  public Date getLoanDate(){
      return loanDate;
  }
- 
+ //main method to test the program
  public static void main(String[] args){
      Scanner input = new Scanner(System.in);
      System.out.println("Please enter the loan amount: ");
