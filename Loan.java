@@ -47,6 +47,11 @@ public Loan(){
      this.numberOfYears = numberOfYears;
  }
  
+ //test static method
+ public static void randomMethod(){
+     System.out.println("this is just a method to check the use of static in "
+             + " a method");
+ }
  //return loanAmount
  public double getLoanAmount(){
      return loanAmount;
@@ -82,9 +87,14 @@ public Loan(){
      int numberOfYears = input.nextInt();
      
      Loan loan1 = new Loan(annualInterestRate,numberOfYears, loanAmount );
-     System.out.printf("Your total monthly payment is $%2.2f and your total payment will be $%2.2f", 
+     System.out.printf("Your total monthly payment is $%2.2f and your total payment will be $%2.2f \n", 
              loan1.getMonthlyPayment(),
              loan1.totalPayment());
+     Loan.randomMethod(); // we are using the static method without an instance of the class
+     //can random method be accessed by an instance of the Loan class
+     loan1.randomMethod();//it can
+     
+     //Loan.getLoanDate();// we cannot use it because we havent created an instance of the class
  
  }
 }
