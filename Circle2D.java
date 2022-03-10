@@ -106,9 +106,10 @@ public class Circle2D {
     //main method to test our program
     public static void main(String[] args){
         
-        
+        //create a new circle object of Circle2D class
         Circle2D c1 = new Circle2D(2,2,5.5);
         
+        //print the output
         System.out.printf("The area of the circle c1 is: %2.2f and the perimeter "
                 + "of the circle c1 is:%2.2f " ,c1.getArea(), c1.getPerimeter());
     //write the code to test the method
