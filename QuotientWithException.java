@@ -10,6 +10,8 @@
 import java.util.*;
 
 public class QuotientWithException {
+    //create a method that returns quotient between two integers and throws 
+    // an Arithmetic Exception error
     public static int quotient(int number1, int number2){
         if (number2 ==0){
             throw new ArithmeticException("Divisor cannot be zero");   
@@ -17,14 +19,14 @@ public class QuotientWithException {
     return number1/number2;
     }
     
-    
+    // main method
     public static void main(String[] args){
         Scanner input = new Scanner(System.in);
         
         System.out.println("Please enter two integers: ");
         int number1 = input.nextInt();
         int number2 = input.nextInt();
-        
+        //catching the exception using the try and catch method
         try {
             int result = quotient(number1,number2);
             System.out.println(number1 + "/" + number2 + " is "
