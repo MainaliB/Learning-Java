@@ -9,6 +9,7 @@
  */
 import java.util.*;
 public class CompareLoans {
+    //work to have OOP 
     public static void main(String[] args){
         //create an array to hold the interest rate
         double [] interestRate = new double[25];
