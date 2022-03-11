@@ -10,7 +10,9 @@
 
 import java.util.*;
 public class DeckOfCards {
+    //work on to have oop aspect
     public static void main(String[] args){
+        
         int[] deck = new int[52];//syntax to initialize an array of integers
         
         String[] suits = {"Spades","Hearts","Diamonds","Clubs"};
