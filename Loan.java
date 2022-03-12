@@ -96,5 +96,7 @@ public Loan(){
      
      //Loan.getLoanDate();// we cannot use it because we havent created an instance of the class
  
+     
+     //think of more features to add 
  }
 }
