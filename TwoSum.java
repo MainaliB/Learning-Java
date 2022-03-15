@@ -33,13 +33,13 @@ public class TwoSum {
     System.out.println("Please enter the target value: ");
     int targetVal = input.nextInt();
     
-    if ((getIndex(arrayA, targetVal).length) ==0){
+    if ((getIndex(arrayA, targetVal)[0]) == -1){
         System.out.println("The numbers in the array do not add up to the target value");
     
     }
     else{
         System.out.println("The numbers in index "+ getIndex(arrayA, targetVal)[0] +
-                " and index "+ getIndex(arrayA, targetVal)[1]+ " adds up "
+                " and "+ getIndex(arrayA, targetVal)[1]+ " adds up "
                         + " to the target value" );
     
     }
@@ -53,12 +53,16 @@ public class TwoSum {
             if (a[j] == numToFind){
                 outputIndex[0] = i;
                 outputIndex[1] = j;
+                break;
+            
+            }
+            
             
             }
               
-                }
+        }
         //work in progress
-    }
+    
    
     return outputIndex;
     
