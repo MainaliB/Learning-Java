@@ -18,6 +18,7 @@ import java.util.*;
 public class TwoSum {
     
     public static void main(String[] args){
+        //prompt user for input array and the target val
     System.out.println("Please enter the length for the array: ");
     Scanner input = new Scanner(System.in);
     int lenArray = input.nextInt();
@@ -32,7 +33,17 @@ public class TwoSum {
     System.out.println("Please enter the target value: ");
     int targetVal = input.nextInt();
     
-    System.out.println(getIndex(arrayA, targetVal)[0] + " and " + getIndex(arrayA, targetVal)[1]);
+    if ((getIndex(arrayA, targetVal).length) ==0){
+        System.out.println("The numbers in the array do not add up to the target value");
+    
+    }
+    else{
+        System.out.println("The numbers in index "+ getIndex(arrayA, targetVal)[0] +
+                " and index "+ getIndex(arrayA, targetVal)[1]+ " adds up "
+                        + " to the target value" );
+    
+    }
+   
     }
     public static int[] getIndex(int[] a, int target){
     int [] outputIndex = new int [2];
