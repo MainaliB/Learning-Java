@@ -30,16 +30,16 @@ public class TwoSum {
     }
     
     System.out.println("Please enter the target value: ");
-    int target = input.nextInt();
+    int targetVal = input.nextInt();
     
-    System.out.println(getIndex(arrayA, target));
+    System.out.println(getIndex(arrayA, targetVal)[0] + "and " + getIndex(arrayA, targetVal)[1]);
     }
     public static int[] getIndex(int[] a, int target){
     int [] outputIndex = new int [2];
     for (int i = 0; i < a.length; i++){
         int numToFind = target - a[i];
         for (int j = i+1; j < a.length; j++){
-            if (j == numToFind){
+            if (a[j] == numToFind){
                 outputIndex[0] = i;
                 outputIndex[1] = j;
             
