@@ -32,7 +32,7 @@ public class TwoSum {
     System.out.println("Please enter the target value: ");
     int targetVal = input.nextInt();
     
-    System.out.println(getIndex(arrayA, targetVal)[0] + "and " + getIndex(arrayA, targetVal)[1]);
+    System.out.println(getIndex(arrayA, targetVal)[0] + " and " + getIndex(arrayA, targetVal)[1]);
     }
     public static int[] getIndex(int[] a, int target){
     int [] outputIndex = new int [2];
