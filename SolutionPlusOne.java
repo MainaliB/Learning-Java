@@ -28,7 +28,10 @@ Thus, the result should be [1,2,4].
 */
 import java.util.*;
 public class SolutionPlusOne {
+    //main method to test the program
     public static void main(String[] args){
+        
+        //asks user for array length and then creates array from user input
         System.out.println("Please enter the length of the array you would like to input: ");
         Scanner input = new Scanner(System.in);
         int lenOfArray = input.nextInt();
@@ -39,6 +42,7 @@ public class SolutionPlusOne {
         arrayA[i] = input.nextInt();
     
     }
+    //prints result
     for (int i = 0; i < (plusOne(arrayA)).length; i ++){
     System.out.println("element of array is: " + plusOne(arrayA)[i]);
     }          
@@ -47,6 +51,7 @@ public class SolutionPlusOne {
     
     }
     
+    //method that adds plus one to the last element of the array
     
     public static int [] plusOne(int[] a){
         
