@@ -26,6 +26,9 @@ Thus, the result should be [1,2,4].
 
 
 */
+
+
+//make change to the program-- if the input array is [9,9], the output must be [1,0,0]
 import java.util.*;
 public class SolutionPlusOne {
     //main method to test the program
