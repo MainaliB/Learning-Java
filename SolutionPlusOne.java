@@ -85,3 +85,10 @@ public class SolutionPlusOne {
     
 }
 }
+
+// first,  convert the input array of integer into a number ex [1,2,3] becomes 123
+// then add 1 to that number so 123 becomes 124
+// then change 124 to string
+// then change string to char one by one while adding it to a new array
+// then return the array
+
