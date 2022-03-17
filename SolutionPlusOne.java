@@ -67,37 +67,11 @@ public class SolutionPlusOne {
         int finalInt = result + 1;
         String finalIntString = Integer.toString(finalInt);
         
-        /*
-        if (a[(a.length-1)] == 9){
-            int [] newArray = new int [a.length + 1];
-            for(int i = 0; i < a.length-1; i++){
-                newArray[i] = a[i];
-            }
-            newArray[a.length-1] = 1;
-            newArray[a.length] = 0;
-         return newArray;
-            
-        }
-        else {
-            int [] newArray = new int [a.length];
-            for(int i = 0; i < a.length-1; i++){
-                newArray[i] = a[i];
-            }
-            newArray[a.length-1] = a[a.length-1]+1;
-        return newArray;
-        }
-*/
-  return finalIntString;      
-        
-        
-  
-    
-}
+   
+    return finalIntString;      
+    }
 }
 
-// first,  convert the input array of integer into a number ex [1,2,3] becomes 123
-// then add 1 to that number so 123 becomes 124
-// then change 124 to string
 // then change string to char one by one while adding it to a new array
 // then return the array
 
