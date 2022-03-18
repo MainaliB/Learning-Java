@@ -46,15 +46,17 @@ public class SolutionPlusOne {
     
     }
     //prints result
-    System.out.println("the result is " + plusOne(arrayA)) ;        
+    for (int i = 0; i < plusOne(arrayA).length;i++){
+    System.out.println("the " + i + " element of the resulting array is " 
+            + plusOne(arrayA)[i]);        
     
-    
+    }
     
     }
     
     //method that adds plus one to the last element of the array
     
-    public static String plusOne(int[] a){
+    public static int[] plusOne(int[] a){
         
         //create a conditional statement to ensure we create a right lenght array if the last value in the 
         // array is 9
@@ -67,8 +69,15 @@ public class SolutionPlusOne {
         int finalInt = result + 1;
         String finalIntString = Integer.toString(finalInt);
         
+        
+        int [] newArray = new int[finalIntString.length()];
+        
+        for (int i = 0; i < finalIntString.length(); i++){
+            newArray[i] = finalIntString.charAt(i) - '0';
+        
+        }
    
-    return finalIntString;      
+    return newArray;      
     }
 }
 
