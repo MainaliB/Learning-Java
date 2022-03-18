@@ -53,7 +53,7 @@ public class SolutionPlusOne {
     }
     
     }
-    
+    //fix because it couldnot accout for array like [9,8,7,6,5,4,3,2,1,0]
     //method that adds plus one to the last element of the array
     
     public static int[] plusOne(int[] a){
