@@ -22,6 +22,10 @@ public class TestPlusOne {
         arrayA[i] = input.nextInt();
     
     }
+    
+    
+    //we have to account for arrays like [9,8,7,6,5,4,3,2,1,0]
+    //work to fix it
     String result = "";
     for(int i = 0; i < (arrayA.length); i ++){
         result = result + Integer.toString(arrayA[i]);
