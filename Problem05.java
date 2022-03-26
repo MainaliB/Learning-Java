@@ -10,6 +10,19 @@ public class Problem05 {
     }
 
     public static int countSevens(int[] myArray) {
+        int count = 0;
+        int numToFind = 7;
+        
+        for(int i = 0; i < myArray.length; i ++){
+            if (myArray[i]==numToFind){
+            count ++;
+            }
+            else{
+            count = count;
+            }
+        
+        }
+        return count;
       // Your code here
     }
     
