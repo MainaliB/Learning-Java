@@ -15,11 +15,16 @@ public class Problem02 {
     public static void fillArrayWithOdds() {
         int [] oddArray = new int [100];
         //fill in the first value of the array
-        oddArray[0] = 1;
-        for (int i = 1; i < oddArray.length; i++){
-            oddArray[i] = oddArray[i-1]+2;
+        int number  = 1;
+        for (int i = 0; i < oddArray.length; i++){
+            oddArray[i] = number;
+            number+=2;
+            
     
     }
+        for (int i = 0; i < oddArray.length; i ++){
+           System.out.print(oddArray[i] + " ");
+       } 
         
     }
     
