@@ -12,7 +12,27 @@ public class Problem04 {
     }
     
     public static void fillWithFibonacci() {
-        // Your code here
+        int [] myArray = new int [25];
+        int number1 = 0;
+        int number2 = 1;
+        myArray[0] = number1;
+        myArray[1] = number2;
+        
+        for(int i = 2; i < myArray.length;i++){
+            if (number1 < number2){
+                number1 = number1+ number2;
+            }
+            else{
+                number2 = number1 + number2;
+            }
+            
+            
+            myArray[i] = Math.max(number1, number2);
+            
+        }
+        for (int i = 0; i < myArray.length; i ++){
+           System.out.print(myArray[i] + " ");
+        }
     }
     
 }
