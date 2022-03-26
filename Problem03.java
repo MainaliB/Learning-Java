@@ -20,7 +20,19 @@ public class Problem03 {
     }
     
     public static void fillWithThreesAndFives() {
-        // Your code here
+        int [] myArray = new int [100];
+        int number = 3;
+        for(int i = 0; i < myArray.length;i++){
+            while(number % 3 != 0 && number%5 !=0){
+                number ++;
+            }
+            myArray[i] = number;
+            number ++;
+        }
+       for (int i = 0; i < myArray.length; i ++){
+           System.out.print(myArray[i] + " ");
+       } 
     }
+        
     
 }
