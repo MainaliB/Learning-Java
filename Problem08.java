@@ -22,17 +22,24 @@ public class Problem08 {
         // Your code here
         int [] finalArray = new int[firstArray.length+ secondArray.length];
         //int j = 0;
-        int i = 0;
-        for (int j = 0; j < firstArray.length;j++){
-            finalArray[i]=firstArray[j];
-            finalArray[i+1]=secondArray[j];
-            i+=2;   
+        //int i = 0;
+        for (int j = 0, k = 0; j < firstArray.length;j++){
+            finalArray[k]=firstArray[j];
+            k+=2;
+            //finalArray[j+1]=secondArray[j];
+            ;   
         }
-        for (int j = (firstArray.length + secondArray.length); j < finalArray.length;j++){
-            finalArray[i]=secondArray[i];
-            i++;   
+        //int k = firstArray.length;
+        for (int i=0, m = 1;i < firstArray.length; i++ ){
+            finalArray[m]=secondArray[i];
+            m+=2;
+              
         }
         
+        for(int i =  (2 * firstArray.length), j = firstArray.length;  i < finalArray.length; i ++){
+            finalArray[i]= secondArray[j];
+            j++;
+        }
         /*
         int k = 0;
         for(int l = 1; l < finalArray.length; l = l+2){
