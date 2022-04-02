@@ -31,9 +31,6 @@ public class StudentMethods {
                             }  
 				
 			}
-			
-			
-			
 		
 	}
 
@@ -63,14 +60,11 @@ public class StudentMethods {
                 for (int i = 0; i<count; i ++){
                     System.out.println(tempArray[i]);
                 }
-                
-                
-    
 	}
 
         
 	public void sortItems(String cargohold[]) {
-		// TODO: Sort the items in the cargo hold (No need to display them here) - Use
+		// Sort the items in the cargo hold (No need to display them here) - Use
 		// Selection or Insertion sorts
 		// NOTE: Special care is needed when dealing with strings! research the
 		// compareTo() method with strings
@@ -114,10 +108,7 @@ public class StudentMethods {
                     }
                     
                     }
-                
-                
-                
-                }
+        }
                 
                 
                 
