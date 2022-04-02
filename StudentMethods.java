@@ -51,22 +51,18 @@ public class StudentMethods {
                 for (int i = 0; i<count; i ++){
                     tempArray[i] = cargohold[i];
                 }
-                String [] finalArray = new String [tempArray.length-1];
-                
-                for (int j = 0,  i = 0; i < tempArray.length;j ++){
-                    int k =0;
-                    while (k < 2){
-                    if(tempArray[i].compareTo(itemToRemove)==0){
-                        continue;  
-                        k++;
+                for (int i = 0; i<count; i ++){
+                    if (itemToRemove.equals(tempArray[i])){
+                        tempArray[i]=null;
+                        break;
+                        
                     }
-                    }
+                }
+                for (int i = 0; i<count; i ++){
+                    System.out.println(tempArray[i]);
+                }
                 
-                    i++;
-                }
-                for (int i = 0; i < finalArray.length; i++){
-                    System.out.println(finalArray[i]);
-                }
+                
     
 	}
 
