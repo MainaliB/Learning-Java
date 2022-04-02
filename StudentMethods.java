@@ -8,14 +8,17 @@
  * @author bibekmainali
  */
 import java.util.*;
-//import org.apache.commons.lang3.ArrayUtils;
+
 public class StudentMethods {
+    
+    //create a scanner object to read user input
+    
     Scanner input = new Scanner(System.in);
 	public void addItem(String cargohold[]) {
                 
 		System.out.println("Please enter the item you want to add: ");
 		String newItem = input.nextLine();
-		// TODO: Add an item that is specified by the user
+		// Add an item that is specified by the user
 			for (int i = 0;  i< cargohold.length; i++) {
                             
                             if (cargohold[i]!= null){
