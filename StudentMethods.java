@@ -38,12 +38,11 @@ public class StudentMethods {
 	}
 
 	public void removeItem(String cargohold[]) {
-		// TODO: Remove an item that is 
-                //System.out.println("Enter the number of items you would like to remove: ");
-                //int numberOfItems = input.nextInt();
+		//  Remove an item that is 
+                
 		System.out.println("Please enter the item you would like to remove: ");
 		String itemToRemove = input.nextLine();
-                //int indexToRemove; //
+                
                 int count = 0;
                 for(int i = 0; i < cargohold.length; i++){
                     if(cargohold[i]!= null){
