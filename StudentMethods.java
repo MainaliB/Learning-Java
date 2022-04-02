@@ -96,10 +96,7 @@ public class StudentMethods {
                                     tempArray[j]=temp;
                                     
                                 }
-                            
                             }
-                                
-                        
                         }
                     for (int i = 0; i < tempArray.length; i ++){
                         System.out.println(tempArray[i]);
@@ -109,11 +106,7 @@ public class StudentMethods {
                     
                     }
         }
-                
-                
-                
-	
-
+    
 	public void searchItems(String cargohold[]) {
 		// TODO: Search for a user specified item
 		System.out.println("Please enter the item you would like to search: ");
@@ -132,7 +125,7 @@ public class StudentMethods {
 	}
 
 	public void displayItems(String cargohold[]) {
-		// TODO: Display only the unique items along with a count of any duplicates
+		// Display only the unique items along with a count of any duplicates
 		// For example it should say
 		// Food - 2
 		// Water - 3
@@ -161,8 +154,6 @@ public class StudentMethods {
 					count1 ++;
 					
 				}
-                                
-                              
 			}
                 
 			System.out.println(tempArray[i] + " - " + count1 );
