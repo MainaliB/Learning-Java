@@ -25,7 +25,7 @@ public class StudentMethods {
                                 continue;
                             }
                             else{
-                                ///if cargohold
+                                
 				cargohold[i]= newItem;
                                 break;
                             }  
